@@ -6313,12 +6313,17 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background-color: #d3f3ff;
-  padding: 1rem; }
+  background-color: #d2e1f9;
+  padding: 0.5rem; }
 
 .header-section img {
-  width: 100%;
+  width: 75%;
+  display: block;
+  margin: auto;
   padding-top: 1rem; }
+
+.header img {
+  width: 100%; }
 
 h1 {
   color: black;
@@ -6354,11 +6359,12 @@ footer p {
 
 nav {
   background-color: #6a92c4;
-  -webkit-box-shadow: 0 8px 6px -6px grey;
-  -moz-box-shadow: 0 8px 6px -6px grey;
-  box-shadow: 0 8px 6px -6px grey;
+  -webkit-box-shadow: 0 10px 8px -8px grey;
+  -moz-box-shadow: 0 10px 8px -8px grey;
+  box-shadow: 0 10px 8px -8px grey;
   width: 100%;
   height: 50px;
+  text-decoration: none;
   text-align: center;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
   nav ul {
@@ -6459,6 +6465,7 @@ iframe {
   clear: both; }
 
 .professors div {
-  background-color: #a6d5e9; }
+  margin-top: 1rem;
+  background-color: #a5c3f3; }
   .professors div p {
     font-family: sans-serif; }
