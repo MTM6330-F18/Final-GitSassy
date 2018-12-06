@@ -20,7 +20,7 @@ body {
     }
   }
   h1 {
-    color: black;
+    color: rgb(34, 26, 26);
     text-align: center;
     font-size: 3rem;
     font-weight: 100;
@@ -28,35 +28,51 @@ body {
   }
   .container{
     position: relative;
-    .btn{
-        background-color: #01703c;
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        font-size: 2rem;
-        border-radius: 7px;
-        padding: 1rem 6rem 1rem 6rem;
-        a {
-          text-decoration: none;
-          color: white;
-        }
-    } .btn:hover { 
-      background-color: white;
-      a{
-        color: black;
-      }
   }
+  
+
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #007bff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
   }
-  footer{
-    nav{
-      margin-top: 6rem;
-    }
-    p{
-      text-align: center;
-      font-family: sans-serif;
-    }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
   }
-  nav {
+  
+  .groups {
+    display: none;
+    position: absolute;
+    background-color: #6a92c4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .groups a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .groups a:hover {background-color: #84b4f0}
+  
+  .dropdown:hover .groups {
+    display: block;
+  }
+
+
+  .navbar {
       background-color: #6a92c4;
       -webkit-box-shadow: 0 10px 8px -8px grey;
       -moz-box-shadow: 0 10px 8px -8px grey;
@@ -66,26 +82,36 @@ body {
       text-decoration: none;
       text-align: center;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      
-      ul {
-        list-style-type: none;
-        margin: 5px;
-        padding: 0.5rem;
-    
-      }
-      li {  
+  }
+  footer {
+    .navbar {
+      margin-top: 6rem;
+    }
+    p{
       text-align: center;
-      }
+      font-family: sans-serif;
+    }
+  }
+  //     ul {
+  //       list-style-type: none;
+  //       margin: 5px;
+  //       padding: 0.5rem;
+    
+  //     }
+  //     li {  
+  //     text-align: center;
+  //     }
       a {
         font-weight: bolder;
         font-size: 1.5rem;
-        float: left;
-        width: 16%;
         text-decoration: none;
         color: black;
-      
       } 
-  }
+
+      
+  // }
+
+  
   .container > div > img {
     width: 100%;
     padding-bottom: 1rem;
