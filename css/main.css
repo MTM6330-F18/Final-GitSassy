@@ -6349,9 +6349,15 @@ h1 {
     .container .btn:hover a {
       color: black; }
 
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center; }
+
 h2, h3, label {
   font-family: 'Roboto', sans-serif;
-  font-weight: 350; }
+  font-weight: 350;
+  padding: 15px; }
 
 footer nav {
   margin-top: 6rem; }
@@ -6399,12 +6405,14 @@ nav {
 
 /*CONTACT PAGE*/
 form {
+  display: block;
+  width: auto;
+  align-content: center;
   background-color: #b0c2e5;
-  width: 100%;
   margin-top: 2rem;
   font-family: 'Roboto', sans-serif;
   color: black;
-  padding-bottom: 6rem; }
+  box-shadow: 10px 10px 28px -12px #6e6e6e; }
 
 input[type=text],
 select,
@@ -6465,16 +6473,31 @@ input {
   height: auto; }
 
 /*individual profs*/
-.bio-text {
-  display: inline;
-  float: right;
-  border: 2px solid black; }
-
 .prof-img {
-  display: inline;
-  float: left; }
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
 
 .campus-info-text {
   background-color: #b0c2e5;
   padding: 15px;
   text-align: center; }
+
+.section-1 {
+  background-color: #7892bc;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 28px -12px #6e6e6e; }
+
+.section-2 {
+  background-color: #b0c2e5;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 10px 10px 28px -12px #6e6e6e; }
+
+#top {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif; }
