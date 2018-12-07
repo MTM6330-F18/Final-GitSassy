@@ -6465,8 +6465,14 @@ input {
   height: auto; }
 
 /*individual profs*/
-.bio {
+.bio-text {
+  display: inline;
+  float: right;
   border: 2px solid black; }
+
+.prof-img {
+  display: inline;
+  float: left; }
 
 .campus-info-text {
   background-color: #b0c2e5;

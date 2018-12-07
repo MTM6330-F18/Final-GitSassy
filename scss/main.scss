@@ -196,8 +196,15 @@ input{
 
   /*individual profs*/
 
-  .bio {
+  .bio-text {
+    display: inline;
+    float: right;
     border: 2px solid black;
+  }
+
+  .prof-img {
+    display: inline;
+    float: left;
   }
   
   .campus-info-text {
@@ -206,4 +213,12 @@ input{
     text-align: center;
   }
 
+  // .go-back {
+  //   background-color: #04703c;
+  //   color: white;
+  //   text-decoration: none;
+  //   border: 2px solid black;
+  //   width: 300px;
+  //   height: 50px;
+  // }
   
