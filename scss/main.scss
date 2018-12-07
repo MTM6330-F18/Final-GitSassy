@@ -6,17 +6,6 @@ $primary: #006341; // set the primary color to AC Green
 $jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
 $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 
-<<<<<<< HEAD
-// Load the main bootstrap framework.
-@import '../node_modules/bootstrap/scss/bootstrap';
-
-// Custom styles that are common for all pages in our project
-
-
-// Load our custom partials with styles specific to a particular page.
-// e.g. @import 'schedule';
-// will import the '_schedule.scss' file with style specific to the schedule page.
-=======
 $primary-color:  #d2e1f9;
 //----------------------------------------------------------------------------HOME PAGE
 img{
@@ -235,4 +224,3 @@ body {
     background-color: white; 
 }
   }
->>>>>>> f43f06a51583ca42337170b146c1d4a1a54926cb
