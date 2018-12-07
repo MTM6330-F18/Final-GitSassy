@@ -1,4 +1,32 @@
-img {
+body {
+  background-color: #d2e1f9; }
+
+.header img {
+  padding: none; }
+
+nav {
+  background-color: #6a92c4;
+  -webkit-box-shadow: 0 2px 30px 2px #333;
+  -moz-box-shadow: 0 2px 30px 2px #333;
+  box-shadow: 0 2px 30px 2px #333;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  nav ul {
+    list-style-type: none;
+    padding: 0.5rem; }
+  nav li {
+    text-align: center; }
+  nav a {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 16%;
+    text-decoration: none;
+    color: black; }
+
+.home_img img {
   width: 50%;
   padding: 1rem; }
 
@@ -6329,39 +6357,12 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-body {
-  background-color: #d2e1f9;
-  padding: 0.5rem; }
-
 footer nav {
   margin-top: 6rem; }
 
 footer p {
   text-align: center;
   font-family: sans-serif; }
-
-nav {
-  background-color: #6a92c4;
-  -webkit-box-shadow: 0 10px 8px -8px grey;
-  -moz-box-shadow: 0 10px 8px -8px grey;
-  box-shadow: 0 10px 8px -8px grey;
-  width: 100%;
-  margin-bottom: 3rem;
-  text-decoration: none;
-  text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  nav ul {
-    list-style-type: none;
-    margin: 5px;
-    padding: 0.5rem; }
-  nav li {
-    text-align: center; }
-  nav a {
-    font-weight: bolder;
-    font-size: 1.5rem;
-    width: 16%;
-    text-decoration: none;
-    color: black; }
 
 @media only screen and (min-width: 60rem) {
   nav {
@@ -6487,3 +6488,8 @@ h2 {
   display: none;
   overflow: hidden;
   background-color: white; }
+
+body .course1 {
+  background-color: #A5C3F3;
+  width: 100%;
+  height: 100%; }

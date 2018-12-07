@@ -1,10 +1,52 @@
 //variables for bootstrap go here//
 
 $primary-color:  #d2e1f9;
+
+//----------------------------------------------------------------------------DOESN'T CHANGE PER PAGE
+body {
+  background-color: $primary-color;
+}
+
+.header {
+  img {
+    padding: none;
+  }
+}
+
+nav {
+  background-color: #6a92c4;
+  -webkit-box-shadow: 0 2px 30px 2px #333;
+  -moz-box-shadow: 0 2px 30px 2px #333;
+  box-shadow: 0 2px 30px 2px #333;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  
+  ul {
+    list-style-type: none;
+    padding: 0.5rem;
+  }
+  li { 
+  text-align: center;
+  }
+  a {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 16%;
+    text-decoration: none;
+    color: black;
+  } 
+}
+
+
 //----------------------------------------------------------------------------HOME PAGE
-img{
-  width: 50%;
-  padding: 1rem;
+.home_img{
+  img {
+    width: 50%;
+    padding: 1rem;
+  }
 }
 
 //---------------------------------------------------------------------Prof overview Page
@@ -25,16 +67,9 @@ img{
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-body {
-    background-color: $primary-color;
-    padding: 0.5rem;
-  }
 
 
-
-  //--------------------------------------------------------------------------------mobile
-
-  //-------------------------------------------------------------------NAV BAR
+  //-------------------------------------------------------------------FOOTER NAV BAR
   footer{
     nav{
       margin-top: 6rem;
@@ -44,36 +79,7 @@ body {
       font-family: sans-serif;
     }
   }
-  nav {
-      background-color: #6a92c4;
-      -webkit-box-shadow: 0 10px 8px -8px grey;
-      -moz-box-shadow: 0 10px 8px -8px grey;
-       box-shadow: 0 10px 8px -8px grey;
-      width: 100%;
-      margin-bottom: 3rem;
-      text-decoration: none;
-      text-align: center;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      
-      ul {
-        list-style-type: none;
-        margin: 5px;
-        padding: 0.5rem;
-    
-      }
-      li { 
-      text-align: center;
-      }
-      a {
-    
-        font-weight: bolder;
-        font-size: 1.5rem;
-        width: 16%;
-        text-decoration: none;
-        color: black;
-      
-      } 
-  }
+  
   //---------------------------------------------------------------desktop Nav
 @media only screen and (min-width: 60rem) {
   nav{
@@ -218,3 +224,12 @@ body {
     background-color: white; 
 }
   }
+
+// Individual Courses
+body {
+  .course1 {
+    background-color: #A5C3F3;
+    width: 100%;
+    height: 100%;
+  }
+}
