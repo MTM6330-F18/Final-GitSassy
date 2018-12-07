@@ -19,7 +19,8 @@ body {
     text-align: center;
     font-size: 3rem;
     font-weight: 100;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
   }
   .container{
     position: relative;
@@ -42,13 +43,17 @@ body {
       }
   }
   }
+  h2, h3, label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 350;
+  }
   footer{
     nav{
       margin-top: 6rem;
     }
     p{
       text-align: center;
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
   }
   nav {
@@ -94,7 +99,7 @@ body {
     div{
       background-color: #a6d5e9;
       p{
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif;
       }
     }
   }
@@ -102,11 +107,11 @@ body {
   /*CONTACT PAGE*/
    
   form {
-    background-color: #042a44;
+    background-color: #b0c2e5;
     width: 100%;
     margin-top: 2rem;
-    font-family: sans-serif;
-    color:white;
+    font-family: 'Roboto', sans-serif;
+    color:black;
     padding-bottom: 6rem;
 }
 
@@ -116,18 +121,21 @@ textarea {
   width: 95%;
 }
 
-input[type=submit] {
-  background-color: #0073c0;
-  color: white;
+.button {
   display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+input[type=submit] {
+  background-color: #04703c;
+  color: white;
   display: block;
-  max-width: 300px;
   margin: 15px;
   padding: 15px;
-  width: 200px;
   border: none;
   cursor: pointer;
-  float: left;
+  border-radius: 8px;
 }
 
 input[type=submit]:hover {
@@ -142,11 +150,20 @@ label {
 
 input,
 textarea {
-  width: 95%;
+  width: calc( 100% - 1rem);
   padding: 0.5rem;
 }
 input{
   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  flex-wrap: wrap;
 }
 
 /*GOOGLE MAP*/
@@ -170,6 +187,23 @@ input{
       display: table;
       clear: both;
   }
+
+  .campus-info {
+    display: flex;
+    width: 800px;
+    height: auto;
+  }
+
+  /*individual profs*/
+
+  .bio {
+    border: 2px solid black;
+  }
   
+  .campus-info-text {
+    background-color: #b0c2e5;
+    padding: 15px;
+    text-align: center;
+  }
 
   
