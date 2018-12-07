@@ -1,3 +1,20 @@
+img {
+  width: 50%;
+  padding: 1rem; }
+
+.table-dark {
+  background-color: #a5c3f3 !important;
+  width: 75% !important;
+  margin: auto !important; }
+
+.btn {
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  float: left;
+  font-size: 2rem !important;
+  background-color: green !important;
+  padding: 1rem !important; }
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6316,6 +6333,42 @@ body {
   background-color: #d2e1f9;
   padding: 0.5rem; }
 
+footer nav {
+  margin-top: 6rem; }
+
+footer p {
+  text-align: center;
+  font-family: sans-serif; }
+
+nav {
+  background-color: #6a92c4;
+  -webkit-box-shadow: 0 10px 8px -8px grey;
+  -moz-box-shadow: 0 10px 8px -8px grey;
+  box-shadow: 0 10px 8px -8px grey;
+  width: 100%;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0.5rem; }
+  nav li {
+    text-align: center; }
+  nav a {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 16%;
+    text-decoration: none;
+    color: black; }
+
+@media only screen and (min-width: 60rem) {
+  nav {
+    height: 50px; }
+    nav a {
+      float: left; } }
+
 .header-section img {
   width: 75%;
   display: block;
@@ -6331,67 +6384,6 @@ h1 {
   font-size: 3rem;
   font-weight: 100;
   font-family: sans-serif; }
-
-.container {
-  position: relative; }
-  .container .btn {
-    background-color: #01703c;
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    font-size: 2rem;
-    border-radius: 7px;
-    padding: 1rem 6rem 1rem 6rem; }
-    .container .btn a {
-      text-decoration: none;
-      color: white; }
-  .container .btn:hover {
-    background-color: white; }
-    .container .btn:hover a {
-      color: black; }
-
-footer nav {
-  margin-top: 6rem; }
-
-footer p {
-  text-align: center;
-  font-family: sans-serif; }
-
-nav {
-  background-color: #6a92c4;
-  -webkit-box-shadow: 0 10px 8px -8px grey;
-  -moz-box-shadow: 0 10px 8px -8px grey;
-  box-shadow: 0 10px 8px -8px grey;
-  width: 100%;
-  height: 50px;
-  text-decoration: none;
-  text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  nav ul {
-    list-style-type: none;
-    margin: 5px;
-    padding: 0.5rem; }
-  nav li {
-    text-align: center; }
-  nav a {
-    font-weight: bolder;
-    font-size: 1.5rem;
-    float: left;
-    width: 16%;
-    text-decoration: none;
-    color: black; }
-
-.container > div > img {
-  width: 100%;
-  padding-bottom: 1rem;
-  height: auto;
-  object-fit: cover;
-  opacity: 0.5; }
-
-.container {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 form {
   background-color: #042a44;
@@ -6444,7 +6436,7 @@ fieldset {
 fieldset:nth-child(4) input {
   width: auto; }
 
-/*GOOGLE MAP*/
+/***************************GOOGLE MAP*/
 iframe {
   width: calc( 100% - 1rem);
   height: 380px;
@@ -6454,7 +6446,7 @@ iframe {
   margin-left: auto;
   margin-right: auto; }
 
-/*CONTACT PAGE COLUMNS*/
+/***********************************************************CONTACT PAGE COLUMNS*/
 .contact_column {
   float: left;
   width: 50%; }
@@ -6464,8 +6456,34 @@ iframe {
   display: table;
   clear: both; }
 
-.professors div {
-  margin-top: 1rem;
-  background-color: #a5c3f3; }
-  .professors div p {
-    font-family: sans-serif; }
+h2 {
+  text-align: center;
+  padding: 1rem; }
+
+.course_description {
+  text-align: center; }
+
+.courses .collapsible {
+  background-color: #6a92c4;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  justify-content: center;
+  width: calc( 100% - 2rem);
+  margin: 1rem;
+  border: none;
+  text-align: center !important;
+  outline: none;
+  font-size: 2rem; }
+
+.courses .active, .courses .collapsible:hover {
+  background-color: #bedcff;
+  color: black; }
+
+.courses .content {
+  margin: 1rem;
+  width: calc( 100% - 2rem);
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white; }
