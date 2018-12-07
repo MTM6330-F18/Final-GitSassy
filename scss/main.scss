@@ -1,52 +1,40 @@
 //variables for bootstrap go here//
 
+$primary-color:  #d2e1f9;
+//----------------------------------------------------------------------------HOME PAGE
+img{
+  width: 50%;
+  padding: 1rem;
+}
+
+//---------------------------------------------------------------------Prof overview Page
+.table-dark {
+  background-color: #a5c3f3 !important;
+  width: 75% !important;
+  margin: auto !important;
+
+}
+.btn{
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  float: left;
+  font-size: 2rem !important;
+  background-color: green !important;
+  padding: 1rem !important;
+}
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 body {
-    background-color: #d2e1f9;
+    background-color: $primary-color;
     padding: 0.5rem;
   }
-  .header-section{
-    img{
-      width: 75%;
-      display: block;
-      margin: auto;
-      padding-top: 1rem;
-    }
-  }
-  .header {
-    img{
-      width: 100%;
-    }
-  }
-  h1 {
-    color: black;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: sans-serif;
-  }
-  .container{
-    position: relative;
-    .btn{
-        background-color: #01703c;
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        font-size: 2rem;
-        border-radius: 7px;
-        padding: 1rem 6rem 1rem 6rem;
-        a {
-          text-decoration: none;
-          color: white;
-        }
-    } .btn:hover { 
-      background-color: white;
-      a{
-        color: black;
-      }
-  }
-  }
+
+
+
+  //--------------------------------------------------------------------------------mobile
+
+  //-------------------------------------------------------------------NAV BAR
   footer{
     nav{
       margin-top: 6rem;
@@ -62,7 +50,7 @@ body {
       -moz-box-shadow: 0 10px 8px -8px grey;
        box-shadow: 0 10px 8px -8px grey;
       width: 100%;
-      height: 50px;
+      margin-bottom: 3rem;
       text-decoration: none;
       text-align: center;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -73,32 +61,52 @@ body {
         padding: 0.5rem;
     
       }
-      li {  
+      li { 
       text-align: center;
       }
       a {
+    
         font-weight: bolder;
         font-size: 1.5rem;
-        float: left;
         width: 16%;
         text-decoration: none;
         color: black;
       
       } 
   }
-  .container > div > img {
-    width: 100%;
-    padding-bottom: 1rem;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.5;
-  } 
-  .container {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  //---------------------------------------------------------------desktop Nav
+@media only screen and (min-width: 60rem) {
+  nav{
+    height: 50px;
+    a{
+      float: left;
+    }
   }
-  
+}
+  .header-section{
+    img{
+      width: 75%;
+      display: block;
+      margin: auto;
+      padding-top: 1rem;
+    }
+
+  }
+  .header {
+    img{
+      width: 100%;
+    }
+  }
+  h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+
+
+  //-------------------------------------------------------------------CONTACT PAGE
   form {
       background-color: #042a44;
       width: 100%;
@@ -152,7 +160,7 @@ body {
   fieldset:nth-child(4) input {
     width: auto;
   }
-  /*GOOGLE MAP*/
+  /***************************GOOGLE MAP*/
   iframe {
       width: calc( 100% - 1rem);
       height: 380px;
@@ -162,7 +170,7 @@ body {
       margin-left: auto;
       margin-right: auto;
   }
-  /*CONTACT PAGE COLUMNS*/
+  /***********************************************************CONTACT PAGE COLUMNS*/
   .contact_column {
       float: left;
       width: 50%;
@@ -173,13 +181,40 @@ body {
       display: table;
       clear: both;
   }
-  
-  .professors {
-    div{
-      margin-top: 1rem;
-      background-color: #a5c3f3;
-      p{
-        font-family: sans-serif;
-      }
-    }
+
+  //-------------------------------------------------------------COURSE PAGE
+  h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+  .course_description {
+    text-align: center;
+  }
+  .courses {
+ 
+  .collapsible {
+    background-color: #6a92c4;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    justify-content: center;
+    width: calc( 100% - 2rem);
+    margin: 1rem;
+    border: none;
+    text-align: center !important;
+    outline: none;
+    font-size: 2rem;;
+}
+.active, .collapsible:hover {
+    background-color: rgb(190, 220, 255);
+    color: black;
+}
+.content {
+  margin: 1rem;
+    width: calc( 100% - 2rem);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white; 
+}
   }
