@@ -31,4 +31,8 @@ gulp.task('default', function () {
   gulp.watch(
     sassPath, // which files to watch for changes (use our variable)
     ['sass']) // an array of tasks to run when changes are detected.
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> f43f06a51583ca42337170b146c1d4a1a54926cb
