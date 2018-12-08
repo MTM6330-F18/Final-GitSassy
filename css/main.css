@@ -6346,7 +6346,8 @@ ul {
 li {
   font-size: 1.1rem;
   font-weight: bold;
-  padding: 5px; }
+  padding: 5px;
+  list-style-position: inside; }
 
 .container {
   position: relative; }
