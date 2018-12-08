@@ -6312,6 +6312,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #d2e1f9;
   padding: 0.5rem; }
@@ -6407,6 +6410,28 @@ a {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+h2 {
+  color: #221a1a;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: sans-serif; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  align-content: center;
+  margin: auto; }
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%; } }
 
 form {
   background-color: #042a44;
