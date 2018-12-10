@@ -1,4 +1,27 @@
 //variables for bootstrap go here//
+//                                      ABOUT PAGE
+.col-sm-4 {
+  padding: 1rem 1rem;
+  background-color: #d2e1f9;
+  border-left: 2px solid #ffffff;
+    .btn-primary {
+      margin: 0.5rem;
+      background-color: #A5C3F3;
+      border: none;
+    }
+      .btn-primary:hover {
+       background-color: #6A92C4;
+      }
+}
+
+.testimonials {
+  background-color: #ffffff;
+    .card {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 0;
+    }
+}
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
@@ -48,12 +71,10 @@ body {
   }
   }
   footer{
-    nav{
-      margin-top: 6rem;
-    }
     p{
       text-align: center;
       font-family: sans-serif;
+      margin: 1rem 0 0.5rem 0;
     }
   }
   nav {
@@ -75,6 +96,7 @@ body {
       }
       li {  
       text-align: center;
+      text-decoration: none;
       }
       a {
         font-weight: bolder;
@@ -183,3 +205,38 @@ body {
       }
     }
   }
+
+
+  
+  //                                      ABOUT PAGE
+  .imd {
+    background-color: #A5C3F3;
+    padding: 5rem 0;
+    .imdText {
+    text-align: center;
+    }
+  }
+
+  .ProgramSummary {
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    .ProgramSummaryText {
+      text-align: center;
+    }
+  }
+  
+  .fees {
+    padding: 1rem 1rem;
+    .FeesText {
+      text-align: left;
+    }
+  }
+
+  .pathwaysText {
+    margin: 8px;
+  } 
+
+  .testimonialsText {
+    padding:1rem 1rem;
+    text-align: center;
+    }
