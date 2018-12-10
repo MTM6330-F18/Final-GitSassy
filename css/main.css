@@ -6465,7 +6465,8 @@ input[type=submit]:hover {
   height: 25px;
   width: 25px;
   background-color: #eee;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
 
 .checkbox input:checked ~ .checkmark {
   background-color: #04703c; }
@@ -6508,12 +6509,6 @@ input, textarea {
     margin-left: auto;
     margin-right: auto;
     width: 50%; }
-  .campus-info-text {
-    background-color: #b0c2e5;
-    padding: 15px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
   .section-1 {
     background-color: #A5C3F3;
     padding: 5px;
