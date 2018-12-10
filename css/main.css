@@ -6336,7 +6336,11 @@ h1 {
   font-family: sans-serif; }
 
 ul.side-by-side {
-  margin-left: 100px; }
+  margin-left: 100px;
+  column-count: 2;
+  column-gap: 20px;
+  margin: 10px;
+  list-style-position: inside; }
 
 ul {
   column-count: 2;
@@ -6352,17 +6356,8 @@ li {
 .container {
   position: relative; }
 
-.dropbtn {
-  padding: 7px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: #007bff;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: black; }
+.dropdown {
+  display: none; }
 
 .dropdown {
   position: relative;
@@ -6400,7 +6395,7 @@ li {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 footer .navbar {
-  margin-top: 6rem; }
+  margin-top: 1rem; }
 
 footer p {
   text-align: center;
@@ -6451,8 +6446,9 @@ h2 {
     width: 100%;
     padding-left: 0;
     margin-left: 0;
-    display: inline-block;
-    float: left; } }
+    float: left; }
+  .header-section img {
+    width: 93%; } }
 
 form {
   background-color: #042a44;
