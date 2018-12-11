@@ -6,11 +6,11 @@
 // $jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
 // $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 @import 'about';
-@import "index";
-@import "courses";
-@import "profs";
+@import 'index';
+@import 'courses';
+@import 'profs';
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import "schedules";
+@import 'schedules';
 
 $primary-color:  #d2e1f9;
 
