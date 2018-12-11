@@ -6406,12 +6406,18 @@ nav {
     font-family: 'Roboto', sans-serif; }
 
 /*-------MOBILE CONTACT PAGE--------*/
+h1 {
+  font-size: 25px; }
+
+h2, h3, label {
+  font-size: 20px; }
+
 .message-us {
-  width: 400px;
+  width: 350px;
   height: auto;
   position: absolute;
-  left: 5%;
-  top: 5%; }
+  left: 8%;
+  top: 10%; }
 
 form {
   display: block;
@@ -6480,59 +6486,79 @@ input, textarea {
   padding: 0.5rem; }
 
 .campus-info-img {
-  width: 800px;
+  width: 350px;
   height: auto; }
+
+.campus-info-text {
+  background-color: #b0c2e5;
+  padding: 15px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
 
 /*----- DESKTOP CONTACT PAGE -------*/
 @media only screen and (min-width: 600px) {
   h2,
   h3 {
-    font-size: 300px; }
+    font-size: 300px;
+    text-align: left; }
   .message-us {
     width: 400px;
     height: auto;
     position: absolute;
     left: 5%;
     top: 5%; }
-  /*----------MOBILE individual profs---------*/
-  h1 {
-    font-size: 35px; }
-  h2,
-  h3 {
-    font-size: 20px;
-    margin: 20px; }
-  .btn-success {
-    margin: 20px;
-    background-color: #04703c; }
-  .prof-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; }
-  .section-1 {
-    background-color: #A5C3F3;
-    padding: 5px;
-    margin: 30px;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
-  .section-2 {
-    background-color: #6A92C4;
-    padding: 5px;
-    margin: 30px;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
-  .btn-light {
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    margin: auto;
-    margin-bottom: 10px; }
-  #top {
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif; }
-  /*DESKTOP individual profs*/ }
+  .campus-info-img {
+    margin-left: 35%;
+    width: 350px;
+    height: auto; } }
 
-@media only screen and (min-width: 600px) and (min-width: 600px) {
+/*----------MOBILE individual profs---------*/
+h1 {
+  font-size: 35px; }
+
+h2,
+h3 {
+  font-size: 20px;
+  margin: 20px; }
+
+.btn-success {
+  margin: 20px;
+  background-color: #04703c; }
+
+.prof-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.section-1 {
+  background-color: #A5C3F3;
+  padding: 5px;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
+
+.section-2 {
+  background-color: #6A92C4;
+  padding: 5px;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
+
+.btn-light {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 10px; }
+
+#top {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif; }
+
+/*DESKTOP individual profs*/
+@media only screen and (min-width: 600px) {
   .prof-img {
     display: block;
     max-width: 350px; }
@@ -6543,12 +6569,6 @@ input, textarea {
   h3 {
     font-size: 25px;
     text-align: center; }
-  .campus-info-text {
-    background-color: #b0c2e5;
-    padding: 15px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
   .section-1 {
     background-color: #A5C3F3;
     padding: 5px;
