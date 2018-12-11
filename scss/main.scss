@@ -1,60 +1,14 @@
 //variables for bootstrap go here//
 
 $primary-color:  #d2e1f9;
-//----------------------------------------------------------------------------HOME PAGE
-img{
-  width: 50%;
-  padding: .5rem;
-}
-
-//---------------------------------------------------------------------Prof overview Page
-.backtocourses{
-  position: absolute;
-  font-size: 2rem !important;
-  color:white;
-  font-size: 1rem !important;
-  border: 1px solid green !important;
-  background-color: green !important;
-  padding: 1rem !important;
-}
-.table-dark.table-bordered{
-  border: $primary-color !important;
-}
-.table-dark {
-  background-color: #a5c3f3 !important;
-  width: 75% !important;
-  margin: auto !important;
-
-}
-td{
-  font-size: 1.5rem;
-}
-
-.hoverprofs{
-  color:white;
-}
-.btn{
-  width: calc(50% - 2rem);
-  margin: 1rem;
-  float: left;
-  font-size: 2rem !important;
-  background-color: green !important;
-  padding: 1rem !important;
-}
-.header-section{
-  img{
-    padding: 0;
-  }
-}
-
+@import "index";
+@import "courses";
+@import "profs";
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 body {
     background-color: $primary-color;
   }
-
-  //--------------------------------------------------------------------------------mobile
-
   //-------------------------------------------------------------------NAV BAR
   footer{
     nav{
@@ -94,7 +48,7 @@ body {
       
       } 
   }
-  //---------------------------------------------------------------desktop Nav
+  //---------------------------------------------------------------desktop
 @media only screen and (min-width: 60rem) {
   nav{
     height: 50px;
@@ -103,60 +57,3 @@ body {
     }
   }
 }
-  .header-section{
-    img{
-      width: 75%;
-      display: block;
-      margin: auto;
-    }
-
-  }
-  .header {
-    img{
-      width: 100%;
-    }
-  }
-  h1 {
-    color: black;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: sans-serif;
-  }
-
-  //-------------------------------------------------------------COURSE PAGE
-  h2 {
-    text-align: center;
-    padding: 1rem;
-  }
-  .course_description {
-    text-align: center;
-  }
-  .courses {
- 
-  .collapsible {
-    background-color: #6a92c4;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    justify-content: center;
-    width: calc( 100% - 2rem);
-    margin: 1rem;
-    border: none;
-    text-align: center !important;
-    outline: none;
-    font-size: 2rem;;
-}
-.active, .collapsible:hover {
-    background-color: rgb(190, 220, 255);
-    color: black;
-}
-.content {
-  margin: 1rem;
-    width: calc( 100% - 2rem);
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: white; 
-}
-  }

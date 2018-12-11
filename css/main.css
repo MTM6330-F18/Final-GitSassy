@@ -2,6 +2,62 @@ img {
   width: 50%;
   padding: .5rem; }
 
+.btn {
+  width: calc(50% - 2rem);
+  margin: 1rem;
+  float: left;
+  font-size: 2rem !important;
+  background-color: green !important;
+  padding: 1rem !important; }
+
+.header-section img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  padding: 0; }
+
+.header img {
+  width: 100%; }
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: sans-serif; }
+
+h2 {
+  text-align: center;
+  padding: 1rem; }
+
+.course_description {
+  text-align: center; }
+
+.courses .collapsible {
+  background-color: #6a92c4;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  justify-content: center;
+  width: calc( 100% - 2rem);
+  margin: 1rem;
+  border: none;
+  text-align: center !important;
+  outline: none;
+  font-size: 2rem; }
+
+.courses .active, .courses .collapsible:hover {
+  background-color: #bedcff;
+  color: black; }
+
+.courses .content {
+  margin: 1rem;
+  width: calc( 100% - 2rem);
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white; }
+
 .backtocourses {
   position: absolute;
   font-size: 2rem !important;
@@ -24,17 +80,6 @@ td {
 
 .hoverprofs {
   color: white; }
-
-.btn {
-  width: calc(50% - 2rem);
-  margin: 1rem;
-  float: left;
-  font-size: 2rem !important;
-  background-color: green !important;
-  padding: 1rem !important; }
-
-.header-section img {
-  padding: 0; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
@@ -6387,50 +6432,3 @@ nav {
     height: 50px; }
     nav a {
       float: left; } }
-
-.header-section img {
-  width: 75%;
-  display: block;
-  margin: auto; }
-
-.header img {
-  width: 100%; }
-
-h1 {
-  color: black;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 100;
-  font-family: sans-serif; }
-
-h2 {
-  text-align: center;
-  padding: 1rem; }
-
-.course_description {
-  text-align: center; }
-
-.courses .collapsible {
-  background-color: #6a92c4;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  justify-content: center;
-  width: calc( 100% - 2rem);
-  margin: 1rem;
-  border: none;
-  text-align: center !important;
-  outline: none;
-  font-size: 2rem; }
-
-.courses .active, .courses .collapsible:hover {
-  background-color: #bedcff;
-  color: black; }
-
-.courses .content {
-  margin: 1rem;
-  width: calc( 100% - 2rem);
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: white; }
