@@ -7,39 +7,14 @@ $jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
 $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 
 $primary-color:  #d2e1f9;
-//----------------------------------------------------------------------------HOME PAGE
-img{
-  width: 50%;
-  padding: 1rem;
-}
-
-//---------------------------------------------------------------------Prof overview Page
-.table-dark {
-  background-color: #a5c3f3 !important;
-  width: 75% !important;
-  margin: auto !important;
-
-}
-.btn{
-  width: calc(50% - 2rem);
-  margin: 1rem;
-  float: left;
-  font-size: 2rem !important;
-  background-color: green !important;
-  padding: 1rem !important;
-}
-
+@import "index";
+@import "courses";
+@import "profs";
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 body {
     background-color: $primary-color;
-    padding: 0.5rem;
   }
-
-
-
-  //--------------------------------------------------------------------------------mobile
-
   //-------------------------------------------------------------------NAV BAR
   footer{
     nav{
@@ -63,7 +38,6 @@ body {
       
       ul {
         list-style-type: none;
-        margin: 5px;
         padding: 0.5rem;
     
       }
@@ -80,7 +54,7 @@ body {
       
       } 
   }
-  //---------------------------------------------------------------desktop Nav
+  //---------------------------------------------------------------desktop
 @media only screen and (min-width: 60rem) {
   nav{
     height: 50px;
@@ -89,138 +63,3 @@ body {
     }
   }
 }
-  .header-section{
-    img{
-      width: 75%;
-      display: block;
-      margin: auto;
-      padding-top: 1rem;
-    }
-
-  }
-  .header {
-    img{
-      width: 100%;
-    }
-  }
-  h1 {
-    color: black;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 100;
-    font-family: sans-serif;
-  }
-
-
-  //-------------------------------------------------------------------CONTACT PAGE
-  form {
-      background-color: #042a44;
-      width: 100%;
-      margin-top: 2rem;
-      font-family: sans-serif;
-      color:white;
-      padding-bottom: 6rem;
-  }
-  input[type=text],
-  select,
-  textarea {
-    width: 95%;
-  }
-  input[type=submit] {
-    background-color: #0073c0;
-    color: white;
-    display: flex;
-    display: block;
-    max-width: 300px;
-    margin: 15px;;
-    padding: 15px;
-    width: 200px;
-    border: none;
-    cursor: pointer;
-    float: left;
-  }
-  .buttons {
-    padding: 10px 0 10px 4px;
-  }
-  input[type=submit]:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  label {
-    display: block;
-    padding: 10px 0 10px 4px;
-  }
-  
-  input,
-  textarea {
-    width: 95%;
-    padding: 0.5rem;
-  }
-  input{
-    text-align: center;
-  }
-  fieldset {
-    border: none;
-  }
-  fieldset:nth-child(4) input {
-    width: auto;
-  }
-  /***************************GOOGLE MAP*/
-  iframe {
-      width: calc( 100% - 1rem);
-      height: 380px;
-      margin: 1rem;
-      padding: 1rem;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  /***********************************************************CONTACT PAGE COLUMNS*/
-  .contact_column {
-      float: left;
-      width: 50%;
-  }
-  
-  .contact_page_columns:after {
-      content: "";
-      display: table;
-      clear: both;
-  }
-
-  //-------------------------------------------------------------COURSE PAGE
-  h2 {
-    text-align: center;
-    padding: 1rem;
-  }
-  .course_description {
-    text-align: center;
-  }
-  .courses {
- 
-  .collapsible {
-    background-color: #6a92c4;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    justify-content: center;
-    width: calc( 100% - 2rem);
-    margin: 1rem;
-    border: none;
-    text-align: center !important;
-    outline: none;
-    font-size: 2rem;;
-}
-.active, .collapsible:hover {
-    background-color: rgb(190, 220, 255);
-    color: black;
-}
-.content {
-  margin: 1rem;
-    width: calc( 100% - 2rem);
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: white; 
-}
-  }
