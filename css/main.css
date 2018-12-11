@@ -1,5 +1,10 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  body p {
+    font-size: 20px; }
+  body h2 {
+    text-align: center;
+    margin: 10px; }
   body header img {
     width: 100%;
     height: auto; }
@@ -28,11 +33,6 @@ body {
         color: black;
         font-weight: bold;
         text-decoration: none; }
-  body p {
-    font-size: 20px; }
-  body h2 {
-    text-align: center;
-    margin: 10px; }
   body .course1 {
     background-color: #A5C3F3;
     padding: 20px 0 40px 0;
@@ -43,7 +43,8 @@ body {
       width: 100%;
       height: 60px;
       font-size: 20px !important;
-      padding: 0 10px !important; }
+      padding: 0 10px !important;
+      background-color: #00703C; }
     body .course1 .btn-success:hover {
       opacity: 0.9 !important; }
     body .course1 p {
@@ -105,7 +106,44 @@ body {
       body .course4 .courseprofs a:hover {
         font-weight: bold;
         color: #333; }
+  body .dedic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-color: rgba(165, 195, 243, 0.5); }
+    body .dedic .btn-success {
+      height: 60px;
+      font-size: 20px !important;
+      padding: 0 10px !important;
+      background-color: #00703C; }
+    body .dedic .btn-success:hover {
+      opacity: 0.9 !important; }
+    body .dedic .prof-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; }
+    body .dedic .section-1 {
+      background-color: white;
+      width: 90%;
+      border-radius: 10px; }
+    body .dedic .section-2 {
+      background-color: white;
+      border-radius: 10px; }
+    body .dedic .btn-light {
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      margin: auto;
+      margin-bottom: 10px; }
+    body .dedic #top {
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif; }
   @media only screen and (min-width: 60rem) {
+    body h2 {
+      text-align: center;
+      margin: 10px; }
     body nav {
       height: 50px; }
       body nav ul {
@@ -137,6 +175,30 @@ body {
       width: 50%; }
     body .course4 .courseprofs {
       width: 30%; } }
+  body .dedic .prof-img {
+    display: block;
+    max-width: 350px; }
+  body .dedic .campus-info-text {
+    background-color: #b0c2e5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
+  body .dedic .section-1 {
+    background-color: #A5C3F3;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
+  body .dedic .section-2 {
+    background-color: #6A92C4;
+    padding: 5px;
+    margin: 30px;
+    border-radius: 3px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
+  body .dedic #top {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif; }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
