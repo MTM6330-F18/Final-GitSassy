@@ -7,71 +7,41 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
-<div class="header">
-  <img src="images/headingimage.png" alt="header">
-</div>
-<div class="navbar">
-        <a href="index.html"> Home</a>
-        <a href="about.html"> About</a>
-        <div class="dropdown">
-            <a href="schedules.html">Schedules</a>
-          <div class="groups">
-            <a href="sectionOne.html">Section 1</a>
-            <a href="sectionTwo.html">Section 2</a>
-            <a href="sectionThree.html">Section 3</a>
-          </div>
-        </div> 
-        <a href="courses.html">Courses</a>
-        <a href="professor.html">Professor</a>
-        <a href="contact.html"> Contact</a>
-      </div>
 <body>
-<h2>2018 Fall Intake</h2>
+<h1>2018 Fall Schedule</h1>
     <div class="courses">
         <button class="collapsible">Level 1</button>
         <div class="content">
-            <button class="collapsible">Section 1</button>
+            <button class="collapsible1">Section 1</button>
             <div class="content">
-              <img src="images/schedules/Y1-1.jpg" alt="year-one">
+              <img src="images/schedules/Y1-1.jpg" alt="year-one" class="sch">
             </div>
-            <button class="collapsible">Section 2</button>
+            <button class="collapsible1">Section 2</button>
             <div class="content">
-                <img src="images/schedules/Y1-2.jpg" alt="year-one">
+                <img src="images/schedules/Y1-2.jpg" alt="year-one" class="sch">
               </div>
-              <button class="collapsible">Section 3</button>
+              <button class="collapsible1">Section 3</button>
             <div class="content">
-                <img src="images/schedules/Y1-3.jpg" alt="year-one">
+                <img src="images/schedules/Y1-3.jpg" alt="year-one" class="sch">
               </div>
         </div>
 
         <button class="collapsible">Level 2</button>
         <div class="content">
-            <button class="collapsible">Section 1</button>
+            <button class="collapsible1">Section 1</button>
             <div class="content">
-              <img src="images/schedules/Y2-1.jpg" alt="year-two">
+              <img src="images/schedules/Y2-1.jpg" alt="year-two" class="sch">
             </div>
-            <button class="collapsible">Section 2</button>
+            <button class="collapsible1">Section 2</button>
             <div class="content">
-                <img src="images/schedules/Y2-2.jpg" alt="year-two">
+                <img src="images/schedules/Y2-2.jpg" alt="year-two" class="sch">
               </div>
-              <button class="collapsible">Section 3</button>
+              <button class="collapsible1">Section 3</button>
             <div class="content">
-                <img src="images/schedules/Y2-3.jpg" alt="year-two">
+                <img src="images/schedules/Y2-3.jpg" alt="year-two" class="sch">
               </div>
         </div>
-        </div>
-      <h1>Important Dates</h1>
-      <ul class="side-by-side">
-        <li>Labour Day - September 3, 2018</li>
-        <li>AC Day - September 4, 2018</li>
-        <li>Programs Start - September 5, 2018</li>
-        <li>Fall Term Tuition Fees Due - September 24, 2018</li>
-        <li>Thanksgiving - October 8, 2018</li>
-        <li>2019 Winter Tuition Fees due - November 16, 2018</li>
-        <li>2019 Winter Term General Elective Selection - October 16 - November 21</li>
-        <li>Final Assessment Week - December 8-15, 2018</li>
-        <li>Winter Term Begin - January 7, 2018</li>
-      </ul>
+      </div>
 </body>
 <script>
     var coll = document.getElementsByClassName("collapsible");
@@ -87,16 +57,20 @@
         }
       });
     }
+
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
     </script>
-<footer>
-    <div class="navbar">
-            <a href="index.html"> Home</a>
-            <a href="about.html"> About</a>
-            <a href="schedules.html">Schedules</a>
-            <a href="courses.html">Courses</a>
-            <a href="professor.html">Professor</a>
-            <a href="contact.html"> Contact</a>
-          </div>
-<p> © Copyright Git Sassy 2018</p>
 </footer>
 </html>
