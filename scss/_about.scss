@@ -1,3 +1,5 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 .col-sm-4 {
     padding: 1rem 1rem;
     background-color: #d2e1f9;
@@ -21,7 +23,7 @@
       }
   }
   
-  @import '../node_modules/bootstrap/scss/bootstrap';
+  
 
   .imd {
     background-color: #A5C3F3;
