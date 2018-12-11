@@ -26,9 +26,39 @@
         <a href="contact.html"> Contact</a>
       </div>
 <body>
-    <h1>2018 Fall Intake</h1>
-          <div class="fall">
-          <a href="images/schedules/IMDscheduleF2018.pdf" target="_blank"><img src="images/schedules/imd.png" alt="IMD Fall 2018" style="width: 100%"></a>
+
+    <div class="courses">
+        <button class="collapsible">Level 1</button>
+        <div class="content">
+            <button class="collapsible">Section 1</button>
+            <div class="content">
+              <img src="images/schedules/Y1-1.jpg" alt="year-one">
+            </div>
+            <button class="collapsible">Section 2</button>
+            <div class="content">
+                <img src="images/schedules/Y1-2.jpg" alt="year-one">
+              </div>
+              <button class="collapsible">Section 3</button>
+            <div class="content">
+                <img src="images/schedules/Y1-3.jpg" alt="year-one">
+              </div>
+        </div>
+
+        <button class="collapsible">Level 2</button>
+        <div class="content">
+            <button class="collapsible">Section 1</button>
+            <div class="content">
+              <img src="images/schedules/Y2-1.jpg" alt="year-two">
+            </div>
+            <button class="collapsible">Section 2</button>
+            <div class="content">
+                <img src="images/schedules/Y2-2.jpg" alt="year-two">
+              </div>
+              <button class="collapsible">Section 3</button>
+            <div class="content">
+                <img src="images/schedules/Y2-3.jpg" alt="year-two">
+              </div>
+        </div>
         </div>
       <h1>Important Dates</h1>
       <ul class="side-by-side">
@@ -43,6 +73,21 @@
         <li>Winter Term Begin - January 7, 2018</li>
       </ul>
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 <footer>
     <div class="navbar">
             <a href="index.html"> Home</a>

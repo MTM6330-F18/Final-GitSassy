@@ -142,6 +142,11 @@ footer {
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.content img{
+  align-content: center;
+}
+
+
 // Section Pages
 h2 {
 color: rgb(34, 26, 26);
@@ -164,8 +169,16 @@ align-content: center;
 margin: auto;
 }
 
+.content img {
+  width: 35%;
+  margin-left: 22rem;
+}
+
 // mobile
 @media screen and (max-width: 500px) {
+  .content img {
+    width: 100%;
+  }
 .column {
     width: 100%;
 }
@@ -275,4 +288,40 @@ iframe {
      font-family: sans-serif;
    }
  }
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+}
+.course_description {
+  text-align: center;
+}
+.courses {
+
+.collapsible {
+  background-color: #6a92c4;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  justify-content: center;
+  width: calc( 100% - 2rem);
+  margin: 1rem;
+  border: none;
+  text-align: center !important;
+  outline: none;
+  font-size: 2rem;;
+}
+.active, .collapsible:hover {
+  background-color: rgb(190, 220, 255);
+  color: black;
+}
+.content {
+margin: 1rem;
+  width: calc( 100% - 2rem);
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white; 
+}
 }
