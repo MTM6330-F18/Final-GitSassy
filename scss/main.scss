@@ -1,5 +1,6 @@
 //---------------------------------------------------------------------------- VARIABLES
 $ac-green:  #00703C;
+$bcg-2: #A5C3F3;
 $bcg-3: rgba(165, 195, 243, 0.5);
 
 body {
@@ -201,58 +202,85 @@ body {
 
 
   //---------------------------------------------------------------------------- INDIVIDUAL PROFS PAGES
-  .dedic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    background-color: $bcg-3;
+  .indiv-prof {
+    .prof1 {
+      background-color: $bcg-2;
+      padding: 20px 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    // back to Profs page button// 
-    .btn-success {
-      height: 60px;
-      font-size: 20px !important;
-      padding: 0 10px !important;
-      background-color: $ac-green;
-    }
-
-    .btn-success:hover {
-      opacity: 0.9!important;
-    }
-
-    .prof-img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    //first box// 
-    .section-1 {
-      background-color: white;
-      width: 90%;
-      border-radius: 10px;
-    }
-
-    //second box// 
-    .section-2 {
-      background-color: white;
-      border-radius: 10px;
-    }
-
-    //individual course link button// 
-    .btn-light {
-        display: flex;
-        justify-content: center;
+      .btn-success {
         width: 250px;
+        height: 60px;
+        font-size: 20px!important;
+        padding: 0 10px !important;
+        background-color: $ac-green;
+      }
+
+      .btn-success:hover {
+        opacity: 0.9!important;
+      }
+
+      p {
+        width: 90%;
         margin: auto;
-        margin-bottom: 10px;
+      }
+
+      img {
+        padding: 10px;
+        width: 50%;
+        height: auto;
+        margin: auto;
+      }
+
+      a:nth-child(2) {
+        width: 100%;
+        color: #425B7A;
+        margin: auto;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
 
-    //back to top button// 
-    #top {
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
+    .prof2 {
+      background-color: $bcg-3;
+
+      a {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+      }
+  
+      a:hover {
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
+    .prof3 {
+      background-color: $bcg-2;
+    }
+
+    .prof2, .prof3{
+      padding: 20px 0 40px 0;
+
+      .taught {
+        background-color: white;
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 
@@ -271,9 +299,10 @@ body {
   
   @media only screen and (min-width: 60rem) {
   
-    h2 {
+    h1, h2 {
       text-align: center;
       margin: 10px;
+      font-size: 50px;
     }
 
 //---------------------------------------------------------------------------- NAVIGATION
@@ -329,7 +358,7 @@ body {
       .btn-success {
         width: 150px;
         height: 40px;
-        font-size: 10px !important;
+        font-size: 10px!important;
         margin-left: 50px;
       }
   
@@ -354,7 +383,6 @@ body {
         width: 30%;
       }
     }
-  }
 
 
   //---------------------------------------------------------------------------- PROFS PAGE
@@ -362,41 +390,42 @@ body {
 
 
   //---------------------------------------------------------------------------- INDIVIDUAL PROFS PAGES
-  .dedic {
-  
-    .prof-img {
-      display: block;
-      max-width: 350px;
+  .indiv-prof {
+    .prof1 {
+      display: inherit;
+
+      .btn-success {
+        width: 150px;
+        height: 40px;
+        font-size: 10px!important;
+        margin-left: 50px;
+      }
+
+      h2 {
+        margin: auto;
+        width: 50%
+      }
+
+      p {
+        width: 50%;
+      }
+
+      img {
+        display: block;
+        max-width: 300px;
+      }
+
+      a:last-child {
+        display: block;
+        text-align: center;
+      }
     }
 
-    .campus-info-text {
-      background-color: #b0c2e5;
-      padding: 15px;
-      text-align: center;
-      border-radius: 3px;
-      box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.4);
+    .prof2, .prof3 {
+      .taught {
+        width: 50%;
+      }
     }
-
-    .section-1 {
-      background-color: #A5C3F3;
-      padding: 5px;
-      margin: 30px;
-      border-radius: 3px;
-      box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.4);
-    }
-
-    .section-2 {
-      background-color: #6A92C4;
-      padding: 5px;
-      margin: 30px;
-      border-radius: 3px;
-      box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.4);
-    }
-
-    #top {
-        font-size: 25px;
-        font-family: 'Roboto', sans-serif;
-   }
   }
 
 
@@ -406,6 +435,8 @@ body {
 
 
   //---------------------------------------------------------------------------- FOOTER
+
+  }
 }
 
   @import '../node_modules/bootstrap/scss/bootstrap';

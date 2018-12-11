@@ -106,44 +106,65 @@ body {
       body .course4 .courseprofs a:hover {
         font-weight: bold;
         color: #333; }
-  body .dedic {
+  body .indiv-prof .prof1 {
+    background-color: #A5C3F3;
+    padding: 20px 0 40px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    background-color: rgba(165, 195, 243, 0.5); }
-    body .dedic .btn-success {
+    align-items: center; }
+    body .indiv-prof .prof1 .btn-success {
+      width: 250px;
       height: 60px;
       font-size: 20px !important;
       padding: 0 10px !important;
       background-color: #00703C; }
-    body .dedic .btn-success:hover {
+    body .indiv-prof .prof1 .btn-success:hover {
       opacity: 0.9 !important; }
-    body .dedic .prof-img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%; }
-    body .dedic .section-1 {
-      background-color: white;
+    body .indiv-prof .prof1 p {
       width: 90%;
-      border-radius: 10px; }
-    body .dedic .section-2 {
-      background-color: white;
-      border-radius: 10px; }
-    body .dedic .btn-light {
-      display: flex;
-      justify-content: center;
-      width: 250px;
+      margin: auto; }
+    body .indiv-prof .prof1 img {
+      padding: 10px;
+      width: 50%;
+      height: auto;
+      margin: auto; }
+    body .indiv-prof .prof1 a:nth-child(2) {
+      width: 100%;
+      color: #425B7A;
       margin: auto;
-      margin-bottom: 10px; }
-    body .dedic #top {
-      font-size: 25px;
-      font-family: 'Roboto', sans-serif; }
+      font-size: 20px;
+      text-decoration: none; }
+    body .indiv-prof .prof1 a:hover {
+      text-decoration: none;
+      font-weight: bold; }
+  body .indiv-prof .prof2 {
+    background-color: rgba(165, 195, 243, 0.5); }
+    body .indiv-prof .prof2 a {
+      text-decoration: none;
+      color: black;
+      padding: 10px; }
+    body .indiv-prof .prof2 a:hover {
+      font-weight: bold;
+      color: #333; }
+  body .indiv-prof .prof3 {
+    background-color: #A5C3F3; }
+  body .indiv-prof .prof2, body .indiv-prof .prof3 {
+    padding: 20px 0 40px 0; }
+    body .indiv-prof .prof2 .taught, body .indiv-prof .prof3 .taught {
+      background-color: white;
+      border-radius: 10px;
+      width: 90%;
+      padding: 10px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
   @media only screen and (min-width: 60rem) {
-    body h2 {
+    body h1, body h2 {
       text-align: center;
-      margin: 10px; }
+      margin: 10px;
+      font-size: 50px; }
     body nav {
       height: 50px; }
       body nav ul {
@@ -174,31 +195,27 @@ body {
     body .course2 .table, body .course3 .table {
       width: 50%; }
     body .course4 .courseprofs {
-      width: 30%; } }
-  body .dedic .prof-img {
-    display: block;
-    max-width: 350px; }
-  body .dedic .campus-info-text {
-    background-color: #b0c2e5;
-    padding: 15px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
-  body .dedic .section-1 {
-    background-color: #A5C3F3;
-    padding: 5px;
-    margin: 30px;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
-  body .dedic .section-2 {
-    background-color: #6A92C4;
-    padding: 5px;
-    margin: 30px;
-    border-radius: 3px;
-    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.4); }
-  body .dedic #top {
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif; }
+      width: 30%; }
+    body .indiv-prof .prof1 {
+      display: inherit; }
+      body .indiv-prof .prof1 .btn-success {
+        width: 150px;
+        height: 40px;
+        font-size: 10px !important;
+        margin-left: 50px; }
+      body .indiv-prof .prof1 h2 {
+        margin: auto;
+        width: 50%; }
+      body .indiv-prof .prof1 p {
+        width: 50%; }
+      body .indiv-prof .prof1 img {
+        display: block;
+        max-width: 300px; }
+      body .indiv-prof .prof1 a:last-child {
+        display: block;
+        text-align: center; }
+    body .indiv-prof .prof2 .taught, body .indiv-prof .prof3 .taught {
+      width: 50%; } }
 
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
