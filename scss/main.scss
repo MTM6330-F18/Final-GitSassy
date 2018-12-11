@@ -1,113 +1,9 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 body {
     background-color: #d3f3ff;
-    padding: 1rem;
 }
-img {
-    width: 25%;
-    height: auto;
-}
-.header-section{
-    img{
-        width: 100%;
-        padding-top: 1rem;
-   }
-}
-h1 {
-    text-align: center;
-    font-size: 75px;
-    font-weight: 100;
-    font-family: 'Roboto', sans-serif;
-    padding: 15px;
-}
-.container{
-    position: relative;
-    .btn{
-        background-color: #042a44;
-        text-decoration: none;
-        color: white;
-        width: 100%;
-        font-size: 2rem;
-        border-color: #042a44;
-        padding: 1rem 6rem 1rem 6rem;
-        a {
-            text-decoration: none;
-            color: white;
-       }
-   }
-    .btn:hover {
-        background-color: white;
-        a{
-            color: black;
-       }
-   }
-}
-h2 {
-    font-size: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-h3, label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 350;
-    padding: 15px;
-    font-size: 30px;
-}
-footer{
-    nav{
-        margin-top: 6rem;
-   }
-    p{
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-   }
-}
-nav {
-    background-color: #042a44;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    ul {
-        list-style-type: none;
-        margin: 5px;
-        padding: 0.5rem;
-   }
-    li {
-        text-align: center;
-   }
-    a {
-        float: left;
-        width: 16%;
-        margin-top: 10px;
-        text-decoration: none;
-        color: white;
-   }
-}
-.container > div > img {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.5;
-}
-.container {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.professors {
-    div{
-        background-color: #a6d5e9;
-        p{
-            font-family: 'Roboto', sans-serif;
-       }
-   }
-}
-/*-------MOBILE CONTACT PAGE--------*/
 
+/*-------MOBILE CONTACT PAGE--------*/
 h1 {
     font-size: 25px;
 }
@@ -121,8 +17,9 @@ h2, h3, label {
     height: auto;
     position: absolute;
     left: 8%;
-    top: 10%;
+    top: 16%;
 }
+
 // contact form // 
 form {
     display: block;
@@ -133,14 +30,17 @@ form {
     font-family: 'Roboto', sans-serif;
     color:black;
 }
+
 input[type=text], select, textarea {
     width: 95%;
 }
+
 .button {
     display: flex;
     justify-content: center;
     width: auto;
 }
+
 // submit button // 
 input[type=submit] {
     background-color: #04703c;
@@ -151,7 +51,9 @@ input[type=submit] {
     border: none;
     cursor: pointer;
     border-radius: 3px;
+    width: 40%;
 }
+
 input[type=submit]:hover {
     background-color: white;
     color: black;
@@ -202,36 +104,48 @@ input, textarea {
 .campus-info-img {
     width: 350px;
     height: auto;
+    margin: auto;
 }
 
 .campus-info-text {
     background-color: #b0c2e5;
-    padding: 15px;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.4);
 }
 
 /*----- DESKTOP CONTACT PAGE -------*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 60rem) {
+
+  .contact {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
 h2, h3 {
   font-size: 300px; 
   text-align: left;
 }
+
 //header png// 
 .message-us {
   width: 400px;
   height: auto;
   position: absolute;
-  left: 5%;
-  top: 5%;
-   }
-   .campus-info-img {
-    margin-left: 35%;
-    width: 350px;
-    height: auto;
+  left: 20%;
+  top: 13%;
 }
 
+   .center {
+    text-align: center;
+     img {
+      width: 350px;
+      height: auto;
+     }
+  }
 }
 /*----------MOBILE individual profs---------*/
 h1 {
@@ -253,10 +167,10 @@ h2, h3 {
     width: 50%;
 }
 
-//first box// 
+//first box//
 .section-1 {
     background-color: #A5C3F3;
-    padding: 5px;
+    padding: 20px;
     margin: 30px;
     border-radius: 3px;
     box-shadow: 0px 9px 10px 0px rgba(0,0,0,0.4);
@@ -283,7 +197,7 @@ h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 /*DESKTOP individual profs*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 60rem) {
     .prof-img {
         display: block;
         max-width: 350px;
