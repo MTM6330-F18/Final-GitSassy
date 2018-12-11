@@ -6448,7 +6448,8 @@ h2 {
 
 @media screen and (max-width: 500px) {
   .content img {
-    width: 100%; }
+    width: 100%;
+    margin-left: 0; }
   .column {
     width: 100%; }
   ul.side-by-side {
