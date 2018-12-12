@@ -1,0 +1,117 @@
+$primary-color:  #d2e1f9;
+$ac-green:  #00703C;
+$bcg-2: #A5C3F3;
+$bcg-3: rgba(165, 195, 243, 0.5);
+
+body {
+    margin: 0;
+
+    .indiv-prof {
+        .prof1 {
+            background-color: $bcg-2;
+            padding: 20px 0 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .btn-success {
+            width: 250px;
+            height: 60px;
+            font-size: 20px!important;
+            padding: 0 10px !important;
+            background-color: $ac-green;
+            }
+
+            .btn-success:hover {
+            opacity: 0.9!important;
+            }
+
+            p {
+            width: 90%;
+            margin: auto;
+            }
+
+            img {
+            padding: 10px;
+            width: 400px;
+            height: auto;
+            margin: auto;
+            }
+
+            a:nth-child(2) {
+            width: 100%;
+            color: #425B7A;
+            margin: auto;
+            font-size: 20px;
+            text-decoration: none;
+            }
+
+            a:hover {
+            text-decoration: none;
+            font-weight: bold;
+            }
+        }
+
+        .prof2 {
+            background-color: $bcg-3;
+
+            a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            }
+        
+            a:hover {
+            font-weight: bold;
+            color: #333;
+            }
+        }
+
+        .prof3 {
+            background-color: $bcg-2;
+        }
+
+        .prof2, .prof3{
+            padding: 20px 0 40px 0;
+
+            .taught {
+            background-color: white;
+            border-radius: 10px;
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 60rem) {
+        nav {
+            height: 50px;
+      
+            ul {
+                display: flex;
+                justify-content: space-between;
+      
+                a {
+                    width: 100%;
+                    font-size: 1rem!important;
+            
+                    li {
+                        border-left: 1px solid #425B7A;
+                        border-bottom: 0;
+                        height: auto;
+                        padding: 13px!important;
+                    }
+        
+                    li:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

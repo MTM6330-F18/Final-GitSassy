@@ -1,4 +1,51 @@
-//variables for bootstrap go here//
+// Bootstrap variable overrides go first.
+// See node_modules/bootstrap/scss/_variables.scss for all of the
+// potential variables to customize.
+// For example ...
+// $primary: #006341; // set the primary color to AC Green
+// $jumbotron-bg: #E5EFEC; // set the Jumbotron background to AC Green @10% tint
+// $hr-border-color: #909390; // set the <hr> border colour to AC Charcoal @50% tint
 
+
+//---------------------------------------------------------------------------- PARTIALS
 @import '../node_modules/bootstrap/scss/bootstrap';
-@import "schedules";
+@import 'about';
+@import 'index';
+@import 'courses';
+@import 'profs';
+@import 'schedules';
+@import 'contact';
+@import "indivCourses";
+@import "indivProfs";
+@import "nav";
+
+$primary-color:  #d2e1f9;
+$ac-green:  #00703C;
+$bcg-2: #A5C3F3;
+$bcg-3: rgba(165, 195, 243, 0.5);
+
+
+body {
+    background-color: $primary-color;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    p {
+      font-size: 20px;
+    }
+  
+    h2 {
+      text-align: center;
+      margin: 10px;
+    }
+  }
+
+  //--------------------------------------------------------------- DESKTOP
+@media only screen and (min-width: 60rem) {
+  h1, h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+  }
+}
+  
