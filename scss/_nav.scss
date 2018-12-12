@@ -8,6 +8,10 @@ $bcg-3: rgba(165, 195, 243, 0.5);
             width: 100%;
             height: auto;
         }
+    }
+    footer{
+        text-align: center;
+    }
     
         nav {
             background-color: #6a92c4;
@@ -16,7 +20,7 @@ $bcg-3: rgba(165, 195, 243, 0.5);
             box-shadow: 0 2px 30px 2px #333;
             width: 100%;
             text-align: center;
-            margin: none;
+            margin-bottom: 2rem;
             position: relative;
           
         ul {
@@ -73,4 +77,3 @@ $bcg-3: rgba(165, 195, 243, 0.5);
             }
         }
     }
-}

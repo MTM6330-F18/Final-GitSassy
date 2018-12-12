@@ -9,6 +9,7 @@
     padding: 1rem !important;
   }
   .table-dark.table-bordered{
+    margin-bottom: 2rem !important;
     border: #d2e1f9 !important;
   }
   .table-dark {
@@ -20,7 +21,9 @@
   td{
     font-size: 1.5rem;
   }
-  
+  tbody{
+    margin: 3rem;
+  }
   .hoverprofs{
     color:white;
   }

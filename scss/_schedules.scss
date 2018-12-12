@@ -17,9 +17,12 @@ body {
     font-size: 35px;
     text-align: center;
   }
+  .centerimg{
+  text-align: center;
+  }
 
 .courses {
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
 
   .collapsible {
@@ -31,8 +34,8 @@ body {
     padding: 18px;
     text-align: center !important;
     font-size: 2rem;
+  
   }
-
   .collapsible1 {
     width: 100%;
     background-color: rgb(190, 220, 255);
@@ -43,8 +46,9 @@ body {
     text-align: center!important;
     font-size: 2rem;
   }
+
   .sch {
-    width: 100%;
+    width: 70%;
     padding: 10px;
   }
 }
